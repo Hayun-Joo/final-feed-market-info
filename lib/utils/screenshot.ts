@@ -16,7 +16,6 @@ export async function getBrowser(): Promise<Browser> {
         '--disable-blink-features=AutomationControlled',
         '--disable-features=IsolateOrigins,site-per-process',
       ],
-      ignoreHTTPSErrors: true,
       protocolTimeout: 60000,
     });
   }

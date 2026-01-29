@@ -8,9 +8,9 @@ export const maxDuration = 180; // 3분 타임아웃 (안정성 향상)
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
-  const { id } = params;
+  const { id } = await params;
 
   try {
     let result;

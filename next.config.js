@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: [
-      'puppeteer',
-      'puppeteer-core',
-      'puppeteer-extra',
-      'puppeteer-extra-plugin-stealth',
-      '@sparticuz/chromium',
-      'sharp',
-    ],
-  },
+  serverExternalPackages: [
+    'puppeteer',
+    'puppeteer-core',
+    'puppeteer-extra',
+    'puppeteer-extra-plugin-stealth',
+    '@sparticuz/chromium',
+    'sharp',
+  ],
   images: {
     remotePatterns: [
       {
